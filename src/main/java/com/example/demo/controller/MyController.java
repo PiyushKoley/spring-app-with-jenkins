@@ -14,4 +14,8 @@ public class MyController {
         return ResponseEntity.ok("up and running");
     }
 
+    @GetMapping("/")
+    public ResponseEntity<?> helper() {
+        return ResponseEntity.ok("up and running");
+    }
 }
