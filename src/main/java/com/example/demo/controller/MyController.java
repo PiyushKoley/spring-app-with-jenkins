@@ -18,4 +18,9 @@ public class MyController {
     public ResponseEntity<?> helper() {
         return ResponseEntity.ok("up and running, working fine hhhhhhhhhhhhh");
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<?> hello() {
+        return ResponseEntity.ok("hello from spring boot");
+    }
 }
