@@ -4,7 +4,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.net.http.WebSocket;
 
 @RestController
 public class MyController {
@@ -22,5 +21,10 @@ public class MyController {
     @GetMapping("/hello")
     public ResponseEntity<?> hello() {
         return ResponseEntity.ok("hello from spring boot");
+    }
+
+    @GetMapping("/oyy")
+    public ResponseEntity<?> oyy() {
+        return ResponseEntity.ok("oyy");
     }
 }
